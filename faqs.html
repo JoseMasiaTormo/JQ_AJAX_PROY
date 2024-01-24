@@ -5,11 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
     <title>FAQS</title>
 </head>
 <body>
     <header>
+        <div id="main">
+            <form id="formTalCheckbox">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="toggle">
+                <div class="bars" id="bar1"></div>
+                <div class="bars" id="bar2"></div>
+                <div class="bars" id="bar3"></div>
+            </label>
+            </form>
+        </div>
+        <div id="sombra" class="sombra"></div>
+        <div id="mySidebar" class="sidebar">
+            <nav class="menu-lateral">
+                <ul id="ul-menu">
+                    <li><button class="button2"><a href="index.html">Inicio</a></button></li>
+                    <li><button class="button2"><a href="autodidacta.html">¿Autodidacta?</a></button></li>
+                    <li><button class="button2"><a href="ebook.html">Ebook <strong>GRATIS</strong></a></button></li>
+                    <li><button class="button2"><a href="cuentaConmigo.html">¡Cuenta Conmigo!</a></button></li>
+                </ul>
+            </nav>
+        </div>
         <nav class="menu">
             <ul>
                 <li><button class="button2"><a href="index.html">Inicio</a></button></li>
@@ -28,9 +51,9 @@
     <div id="extra"></div>
     <section class="layout-cc">
         <h2>Preguntas Frequentes</h2>
-        <div class="gridLayout-ccPrueba">
+        <div class="gridLayout-ccPrueba" id="faqs">
             <div class="column-cc">
-                <p><strong>¿Necesitas ayuda en temas más básicos como actualizar Windows o edición de videos?</strong></p>
+                <p><h4>¿Necesitas ayuda en temas más básicos como actualizar Windows o edición de videos?</h4></p>
                 <p>Aquí nos tienes, para echarte un cable (y sin wifi), configurar equipos 
                     traspasar información entre dispositivos móviles, editar vídeos y añadir subtítulos, utilizar hojas de cálculo, etc.
                 </p>
@@ -38,7 +61,7 @@
                     las risitas! Tienes la solución a cualquier incidencia que te ocurra.</p>
             </div>
             <div class="column-cc">
-                <p><strong>¿Te sientes abrumado con "eso" del email marketing o "la nube"?</strong></p>
+                <p><h4>¿Te sientes abrumado con "eso" del email marketing o "la nube"?</h4></p>
                 <p>Vas a conseguir que el email marketing y el manejo de la nube sean fáciles y efectivos para ti.</p>
                 <p>Te asesoramos para que uses el software que mejor se te adapte (si es gratuito, ¡mejor!), configurar los envíos, hacer funnels, seguimientos, etc.</p>
                 <p>Deja atrás la confusión y la preocupación. Permítenos encargarnos de "eso" del email marketing y "la nube" para que tú puedas enfocarte en lo que realmente 
@@ -46,7 +69,7 @@
                 </p>
             </div>
             <div class="column-cc">
-                <p><strong>¿Piensas que tú o tu empresa no tenéis cabida en Instagram, Facebook, Tik Tok o LinkedIn?</strong></p>
+                <p><h4>¿Piensas que tú o tu empresa no tenéis cabida en Instagram, Facebook, Tik Tok o LinkedIn?</h4></p>
                 <p>¡Para nada! Tanto tú como tu empresa tienen un lugar especial en estas plataformas, diseñadas para abarcar una amplia variedad
                     de negocios y profesionales de diferentes sectores.
                 </p>
@@ -60,7 +83,7 @@
                 <p>Permítenos ayudarte a crear estrategias efectivas y personalizadas que se alineen con tu identidad de marca y atraigan a tu público objetivo de manera auténtica</p>
             </div>
             <div class="column-cc">
-                <p><strong>¿Te aterra pensar que el Chat GPT controlará tu vida?</strong></p>
+                <p><h4>¿Te aterra pensar que el Chat GPT controlará tu vida?</h4></p>
                 <p>¡Wow, ni de lejos! Chat GPT, a quien conocemos bien, no tiene entre sus planes controlar el mundo ni convertirse en gobernante supremo.</p>
                 <p>Es un amigable y simpático asistente virtual, que está esperando para brindarte ayuda y apollo en lo que necesites.</p>
                 <p>Será tu aliado en la búsqueda de información, generación de ideas y resolución de problemas. ¿Su objetivo? Hacer tu vida más fácil y divertida.</p>
