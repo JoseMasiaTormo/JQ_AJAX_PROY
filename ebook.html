@@ -50,60 +50,64 @@
         </div>
     </header>
     <div id="extra"></div>
-    <section class="gridLayout-ebook">
-        <div class="ebook-info">
-            <h2>Descarga E-Book ¡Gratis!</h2>
-            <p>¿Quieres sentirte más cómodo en LinkedIn o Instagram?</p>
-            <p>Marca <strong>LinkedIn</strong> si quieres descubrir los secretos para optimizar
-                tu perfil y convertir esta red en una de las mejores herramientas que te aporte
-                clientes potenciales.
-            </p>
-            <p>Marca <strong>Instagram</strong>, si tu intención es obtener más seguidores, cercanos
-                y fieles a tu servicio o producto.
-            </p>
-            <p>En ambos eBooks, te revelaré estrategias efectivas para destacar en estas redes.</p>
-            <p><strong>Sólo tienes que dejar tus datos de contacto y marcar el eBook que prefieres.</strong>
-                Y ¡Claro que puedes marcar ambos!
-            </p>
-            <p>
-                ¡No te pierdas la oportunidad de mejorar tu presencia en redes sociales!
-            </p>
+    <div class="grayLimits">
+        <div class="limits">
+            <section class="gridLayout-ebook">
+                <div class="ebook-info">
+                    <h2>Descarga E-Book ¡Gratis!</h2>
+                    <p>¿Quieres sentirte más cómodo en LinkedIn o Instagram?</p>
+                    <p>Marca <strong>LinkedIn</strong> si quieres descubrir los secretos para optimizar
+                        tu perfil y convertir esta red en una de las mejores herramientas que te aporte
+                        clientes potenciales.
+                    </p>
+                    <p>Marca <strong>Instagram</strong>, si tu intención es obtener más seguidores, cercanos
+                        y fieles a tu servicio o producto.
+                    </p>
+                    <p>En ambos eBooks, te revelaré estrategias efectivas para destacar en estas redes.</p>
+                    <p><strong>Sólo tienes que dejar tus datos de contacto y marcar el eBook que prefieres.</strong>
+                        Y ¡Claro que puedes marcar ambos!
+                    </p>
+                    <p>
+                        ¡No te pierdas la oportunidad de mejorar tu presencia en redes sociales!
+                    </p>
+                </div>
+                <div class="ebook-form">
+                    <form id="form1">
+                        <div class="input-group">
+                            <input type="text" name="nombre" id="nombre" class="input">
+                            <label for="nombre" class="user-label">Nombre*</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" name="correo" id="correo" class="input">
+                            <label for="correo" class="user-label">Correo*</label>
+                        </div>
+                        <div class="checkboxes">
+                            <label class="cyberpunk-checkbox-label">
+                                <input type="checkbox" id="ch1" class="cyberpunk-checkbox" name="ch1">
+                                Instagram eBook
+                            </label>
+                            <label class="cyberpunk-checkbox-label">
+                                <input type="checkbox" id="ch2" name="ch2" class="cyberpunk-checkbox">
+                                LinkedIn eBook
+                            </label>
+                            <label class="cyberpunk-checkbox-label">
+                                <input type="checkbox" id="ch3" name="ch3" class="cyberpunk-checkbox">
+                                <a id="tooltip">Condiciones*</a>
+                            </label>
+                            <br>
+                            <label class="cyberpunk-checkbox-label">
+                                El * marca los campos obligatorios.
+                            </label>
+                            <input type="button" value="Enviar ⮕" id="btn-submit" class="button4"/>
+                            <img id="miGif" src="images/loading_3.gif" alt="migif">
+                            <div id="message"></div>
+                        </div>
+                    </form>
+                </div>
+                <div id="respuesta"></div>
+            </section>
         </div>
-        <div class="ebook-form">
-            <form id="form1">
-                <div class="input-group">
-                    <input type="text" name="nombre" id="nombre" class="input">
-                    <label for="nombre" class="user-label">Nombre*</label>
-                </div>
-                <div class="input-group">
-                    <input type="email" name="correo" id="correo" class="input">
-                    <label for="correo" class="user-label">Correo*</label>
-                </div>
-                <div class="checkboxes">
-                    <label class="cyberpunk-checkbox-label">
-                        <input type="checkbox" id="ch1" class="cyberpunk-checkbox" name="ch1">
-                        Instagram eBook
-                    </label>
-                    <label class="cyberpunk-checkbox-label">
-                        <input type="checkbox" id="ch2" name="ch2" class="cyberpunk-checkbox">
-                        LinkedIn eBook
-                    </label>
-                    <label class="cyberpunk-checkbox-label">
-                        <input type="checkbox" id="ch3" name="ch3" class="cyberpunk-checkbox">
-                        <a id="tooltip">Condiciones*</a>
-                    </label>
-                    <br>
-                    <label class="cyberpunk-checkbox-label">
-                        El * marca los campos obligatorios.
-                    </label>
-                    <input type="button" value="Enviar ⮕" id="btn-submit" class="button4"/>
-                    <img id="miGif" src="images/loading_3.gif" alt="migif">
-                    <div id="message"></div>
-                </div>
-            </form>
-        </div>
-        <div id="respuesta"></div>
-    </section>
+    </div>
     <div id="extra2"></div>
     <footer>
         <nav class="menu">

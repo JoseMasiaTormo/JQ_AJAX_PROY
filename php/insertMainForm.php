@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (!empty($nombre) && !empty($apellido) && !empty($was) && !empty($correo)) {
         $sql = $mysqli->prepare("INSERT INTO form_cc (nombre, apellido, pais, ciudad, was, correo, info) VALUES (?, ?, ?, ?, ?, ?, ?)");
-        $sql->bind_param("ssssssd", $nombre, $apellido, $pais, $ciudad, $was, $correo, $info);
+        $sql->bind_param("ssssdss", $nombre, $apellido, $pais, $ciudad, $was, $correo, $info);
         $sql->execute();
         echo "Formulario enviado correctamente";
         $mysqli->close();
