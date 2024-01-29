@@ -53,55 +53,57 @@
         </div>
     </header>
     <div id="extra"></div>
-    <div class="sectionForm">
-        <div class="ebook-form" id="mainForm">
-            <form id="form2">
-                <div class="wrapper">
-                    <div class="input-group content">
-                        <input type="text" name="nombre" id="nombre" class="input">
-                        <label for="nombre" class="user-label">Nombre*</label>
+    <div class="limits">
+        <div class="sectionForm">
+            <div class="ebook-form" id="mainForm">
+                <form id="form2">
+                    <div class="wrapper">
+                        <div class="input-group content">
+                            <input type="text" name="nombre" id="nombre" class="input">
+                            <label for="nombre" class="user-label">Nombre*</label>
+                        </div>
+                        <div class="input-group content">
+                            <input type="text" name="apellido" id="apellido" class="input">
+                            <label for="apellido" class="user-label">Apellido*</label>
+                        </div>
+                        <div class="input-group content">
+                            <input type="text" name="pais" id="pais" class="input">
+                            <label for="pais" class="user-label">País/Region</label>
+                        </div>
+                        <div class="input-group content">
+                            <input type="text" name="ciudad" id="ciudad" class="input">
+                            <label for="ciudad" class="user-label">Ciudad</label>
+                        </div>
+                        <div class="input-group content">
+                            <input type="text" name="was" id="was" class="input">
+                            <label for="was" class="user-label">WhatsApp*</label>
+                        </div>
+                        <div class="input-group content">
+                            <input type="text" name="correo" id="correo" class="input">
+                            <label for="correo" class="user-label">Correo*</label>
+                        </div>
+                        <div class="input-group content">
+                            <input type="text" name="info" id="info" class="input">
+                            <label for="info" class="user-label">Cuéntame!</label>
+                        </div>
                     </div>
-                    <div class="input-group content">
-                        <input type="text" name="apellido" id="apellido" class="input">
-                        <label for="apellido" class="user-label">Apellido*</label>
+                    <div class="checkboxes">
+                        <label class="cyberpunk-checkbox-label">
+                            <input type="checkbox" id="conds" name="conds" class="cyberpunk-checkbox">
+                            <a id="etiqueta">Condiciones*</a>
+                        </label>
+                        <br>
+                        <label class="cyberpunk-checkbox-label">
+                            El * marca los campos obligatorios.
+                        </label>
+                        <input type="button" value="Enviar ⮕" id="btn-submit-mainForm" class="button4" />
+                        <img id="gif" src="images/loading_3.gif" alt="migif">
+                        <div id="message"></div>
                     </div>
-                    <div class="input-group content">
-                        <input type="text" name="pais" id="pais" class="input">
-                        <label for="pais" class="user-label">País/Region</label>
-                    </div>
-                    <div class="input-group content">
-                        <input type="text" name="ciudad" id="ciudad" class="input">
-                        <label for="ciudad" class="user-label">Ciudad</label>
-                    </div>
-                    <div class="input-group content">
-                        <input type="text" name="was" id="was" class="input">
-                        <label for="was" class="user-label">Número de teléfono con WhatsApp*</label>
-                    </div>
-                    <div class="input-group content">
-                        <input type="text" name="correo" id="correo" class="input">
-                        <label for="correo" class="user-label">Correo*</label>
-                    </div>
-                    <div class="input-group content">
-                        <textarea name="info" id="info" cols="40" rows="10" class="input"></textarea>
-                        <label for="info" class="user-label">Cuéntame. En qué te podemos ayudar?</label>
-                    </div>
-                </div>
-                <div class="checkboxes">
-                    <label class="cyberpunk-checkbox-label">
-                        <input type="checkbox" id="conds" name="conds" class="cyberpunk-checkbox">
-                        <a id="etiqueta">Acepto recibir comunicaciones de TSP-Soluciones*</a>
-                    </label>
-                    <br>
-                    <label class="cyberpunk-checkbox-label">
-                        El * marca los campos obligatorios.
-                    </label>
-                    <input type="button" value="Enviar ⮕" id="btn-submit-mainForm" class="button4" />
-                    <img id="gif" src="images/loading_3.gif" alt="migif">
-                    <div id="message"></div>
-                </div>
-            </form>
+                </form>
+            </div>
+            <div id="respuesta"></div>
         </div>
-        <div id="respuesta"></div>
     </div>
     <div id="extra2"></div>
     <footer>

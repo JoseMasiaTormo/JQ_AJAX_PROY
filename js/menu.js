@@ -2,19 +2,19 @@
 $(document).ready(function(){
     $("#checkbox").change(function(){
       if(this.checked){
-        openNav();
+        $('#sombra').animate({
+          width: '100%'
+        }, 1000);
+        $('#mySidebar').animate({
+          width: "230px"
+        }, 1000);
       } else {
-        closeNav();
+        $('#mySidebar').animate({
+          width: '0'
+        }, 1000);
+        $('#sombra').animate({
+          width: '0%'
+        }, 1000);
       }
     });
   });
-
-  function openNav() {
-    $("#sombra").css("width", "100%");
-    $("#mySidebar").css("width", "230px");
-  }
-
-  function closeNav() {
-    $("#sombra").css("width", "0%");
-    $("#mySidebar").css("width", "0");
-  }

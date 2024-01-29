@@ -63,15 +63,7 @@ $(document).ready(function () {
         }, 1000);
     });
 
-    $("#etiqueta").on({
-        mouseover: function () {
-            overlib('tsp-soluciones se compromete a proteger y respetar tu privacidad, y solo usaremos tu información personal para administrar tu cuenta y proporcionar los productos y servicios que nos solicitaste. De vez en cuando, nos gustaría ponernos en contacto contigo acerca de nuestros productos y servicios, así como sobre otros contenidos que puedan interesarte. Si aceptas que nos comuniquemos contigo para este fin, marca la casilla a continuación para indicar cómo deseas que nos comuniquemos.');
-        },
-        mouseout: function () {
-            nd();
-        }
-    });
-    removeLabel();
+    $("#etiqueta").customTooltip();
 });
 
 function validar() {
@@ -194,3 +186,18 @@ function removeLabel() {
     });
 
 }
+
+$.fn.customTooltip = function () {
+    return this.each(function () {
+        var $element = $(this);
+
+        $element.on({
+            mouseover: function () {
+                overlib('tsp-soluciones se compromete a proteger y respetar tu privacidad, y solo usaremos tu información personal para administrar tu cuenta y proporcionar los productos y servicios que nos solicitaste. De vez en cuando, nos gustaría ponernos en contacto contigo acerca de nuestros productos y servicios, así como sobre otros contenidos que puedan interesarte. Si aceptas que nos comuniquemos contigo para este fin, marca la casilla a continuación para indicar cómo deseas que nos comuniquemos.');
+            },
+            mouseout: function () {
+                nd();
+            }
+        });
+    });
+};
